@@ -15,8 +15,11 @@ if [ "$running" != "true" ]; then
     --net dev.net \
     -h localhost \
     -it \
-    -v "$HOME"/mflorence99/go-dev:/go$cached \
-    golang
+    -v "$HOME"/tmp:/temp \
+    -v "$HOME"/.ssh:/root/.ssh-orig \
+    -v "$HOME"/.gitconfig:/root/.gitconfig \
+    -v "$(pwd):/go$cached \
+    mflo999/"$container"
 
 else
 
