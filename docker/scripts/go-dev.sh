@@ -18,7 +18,7 @@ if [ "$running" != "true" ]; then
     -v "$HOME"/tmp:/temp \
     -v "$HOME"/.ssh:/root/.ssh-orig \
     -v "$HOME"/.gitconfig:/root/.gitconfig \
-    -v "$(pwd):/go$cached \
+    -v "$HOME"/mflorence99/go-dev:/go$cached \
     mflo999/"$container"
 
 else
